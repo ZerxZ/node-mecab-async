@@ -83,7 +83,7 @@ class Mecab {
   }
   public parse(str: string, callback: (err: string | null, arr?: any[]) => any) {
     process.nextTick(() => { // for bug
-      console.log(this._shellCommand(str));
+      // console.log(this._shellCommand(str));
 
       exec(this._shellCommand(str), this.options, (_, result, err) => {
         if (err) { return callback(err); }
@@ -92,7 +92,7 @@ class Mecab {
     });
   }
   public parseSync(str: string): any[] {
-    console.log(this._shellCommand(str));
+    // console.log(this._shellCommand(str));
     const result = exec(this._shellCommand(str), this.options).stdout
     return this._parseMeCabResult(String(result)).slice(0, -2);
   }

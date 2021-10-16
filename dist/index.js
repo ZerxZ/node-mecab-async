@@ -72,7 +72,7 @@ class Mecab {
     }
     parse(str, callback) {
         process.nextTick(() => {
-            console.log(this._shellCommand(str));
+            // console.log(this._shellCommand(str));
             shelljs.exec(this._shellCommand(str), this.options, (_, result, err) => {
                 if (err) {
                     return callback(err);
@@ -82,7 +82,7 @@ class Mecab {
         });
     }
     parseSync(str) {
-        console.log(this._shellCommand(str));
+        // console.log(this._shellCommand(str));
         const result = shelljs.exec(this._shellCommand(str), this.options).stdout;
         return this._parseMeCabResult(String(result)).slice(0, -2);
     }
