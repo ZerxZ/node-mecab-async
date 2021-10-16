@@ -1,9 +1,10 @@
 {
   "name": "@zerxz/mecab-async",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "license": "MIT",
   "author": {
-    "name": "Zerzx",
-    "email": "info@hecomi.com"
+    "name": "zerxz",
+    "email": "ghzero97@gmail.com"
   },
   "scripts": {
     "build": "rollup -c",
@@ -12,18 +13,17 @@
   },
   "main": "dist/index.js",
   "dependencies": {
-    "shell-quote": "*",
     "shelljs": "^0.8.4"
   },
   "readmeFilename": "README.md",
   "description": "Asynchronous japanese morphological analyzer using MeCab.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hecomi/node-mecab-async.git"
+    "url": "https://github.com/ZerxZ/node-mecab-async.git"
   },
   "bugs": {
     "mail": "info@hecomi.com",
-    "url": "http://github.com/hecomi/node-mecab-async/issues"
+    "url": "http://github.com/ZerxZ/node-mecab-async/issues"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^21.0.0",

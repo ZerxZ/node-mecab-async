@@ -15,7 +15,7 @@ Asynchronous japanese morphological analyser using MeCab
 以下のようにコールバック経由で解析結果を取得します。
 
 ```javascript
-var MeCab = new require("@zerxz/mecab-async")
+const MeCab  = require("@zerxz/mecab-async")
   , mecab = new MeCab()
 ;
 mecab.parse('いつもニコニコあなたの隣に這い寄る混沌ニャルラトホテプです！', function(err, result) {
@@ -42,7 +42,7 @@ mecab.parse('いつもニコニコあなたの隣に這い寄る混沌ニャル�
 わかち書きもできます。
 
 ```javascript
-var MeCab = new require("@zerxz/mecab-async")
+const MeCab  = require("@zerxz/mecab-async")
   , mecab = new MeCab()
 ;
 mecab.wakachi('いつもニコニコあなたの隣に這い寄る混沌ニャルラトホテプです！', function(err, result) {
@@ -76,7 +76,7 @@ mecab.wakachi('いつもニコニコあなたの隣に這い寄る混沌ニャ�
 シェルコマンドをカスタマイズして使うこともできます。
 
 ```javascript
-var MeCab = new require("@zerxz/mecab-async")
+const MeCab  = require("@zerxz/mecab-async")
   , mecab = new MeCab()
 ;
 mecab.command = '/usr/local/bin/mecab -E "<改行>\\n"';   // EOSを <改行> と表示
@@ -86,7 +86,7 @@ mecab.command = '/usr/local/bin/mecab -E "<改行>\\n"';   // EOSを <改行> �
 `exec` コマンドの与えるオプションを以下のように指定できます。
 
 ```javascript
-var MeCab = new require("@zerxz/mecab-async")
+const MeCab  = require("@zerxz/mecab-async")
   , mecab = new MeCab()
 ;
 mecab.options = {
@@ -99,7 +99,7 @@ mecab.options = {
 辞書によって結果が異なる場合は`parseFormat`および`parseSyncFormat`で使用されるパーサをカスタマイズできます。
 
 ```javascript
-var MeCab = new require("@zerxz/mecab-async")
+const MeCab  = require("@zerxz/mecab-async")
   , mecab = new MeCab()
 ;
 mecab.parser = data => {
