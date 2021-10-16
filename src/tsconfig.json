@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "lib":["es2020","esnext","es6"],
+    "downlevelIteration": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "sourceMap": true,
+    "outDir": "../dist",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+   "emitDecoratorMetadata": true,
+    
+  },
+  "include": [
+    "." ],
+  "exclude": [
+    "node_modules"
+  ]
+}
